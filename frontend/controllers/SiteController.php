@@ -76,6 +76,17 @@ class SiteController extends Controller
     }
 
     /**
+     * Renderiza o outro template
+     * @return string
+     */
+    public function actionPages()
+    {
+        $this->layout = 'pages';
+
+        return $this->render('pages');
+    }
+
+    /**
      * Logs in a user.
      *
      * @return mixed
